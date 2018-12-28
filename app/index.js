@@ -9,7 +9,9 @@ EStyleSheet.build({
   $white: '#FFFFFF',
   $border: '#e2e2e2',
   $inputText: '#797979',
-  $lightGray: '#f0f0f0'
+  $lightGray: '#f0f0f0',
+
+  // $outline: 1 // good for development
 })
 
 export default () => <Home /> // you can not export a component, but you can export a function that returns a component

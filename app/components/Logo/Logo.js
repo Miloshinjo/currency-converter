@@ -22,19 +22,19 @@ class Logo extends Component {
     }
   }
 
-  componentDidMount() {
+  componentDidMount () {
     const name = Platform.OS === 'ios' ? 'Will' : 'Did'
     this.keyboardDidShowListener = Keyboard.addListener(
       `keyboard${name}Show`,
       this.keyboardWillShow
-    );
+    )
     this.keyboardDidHideListener = Keyboard.addListener(
       `keyboard${name}Hide`,
       this.keyboardWillHide
-    );
+    )
   }
 
-  componentWillUnmount() {
+  componentWillUnmount () {
     this.keyboardDidShowListener.remove()
     this.keyboardDidHideListener.remove()
   }
